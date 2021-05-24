@@ -53,12 +53,11 @@ function startRecording() {
 			create an audio context after getUserMedia is called
 			sampleRate might change after getUserMedia is called, like it does on macOS when recording through AirPods
 			the sampleRate defaults to the one set in your OS for your playback device
-		*/
+    */
       audioContext = new AudioContext();
-
       //update the format
-      document.getElementById("formats").innerHTML =
-        "Format: 1 channel pcm @ " + audioContext.sampleRate / 1000 + "kHz";
+      // document.getElementById("formats").innerHTML =
+      //   "Format: 1 channel pcm @ " + audioContext.sampleRate / 1000 + "kHz";
 
       /*  assign to gumStream for later use  */
       gumStream = stream;
