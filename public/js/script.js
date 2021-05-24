@@ -21,7 +21,6 @@ pauseButton.addEventListener("click", pauseRecording);
 function startRecording() {
   console.log("recordButton clicked");
   //update the format
-  document.getElementById("title").innerHTML = "Hi";
   /*
 		Simple constraints object, for more advanced audio features see
 		https://addpipe.com/blog/audio-constraints-getusermedia/
@@ -48,6 +47,7 @@ function startRecording() {
       console.log(
         "getUserMedia() success, stream created, initializing Recorder.js ..."
       );
+      document.getElementById("title").innerHTML = "Hi";
 
       /*
 			create an audio context after getUserMedia is called
