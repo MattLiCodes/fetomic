@@ -1,0 +1,1 @@
+print("Heart Rate: 120");
