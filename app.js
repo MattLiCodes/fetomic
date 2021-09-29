@@ -7,7 +7,7 @@ const { spawn } = require("child_process");
 const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  const python = spawn("python", ["scriptTest.py"]);
+  const python = spawn("python", ["HR.py", "120"]);
   python.stdout.on("data", (data) => {
     console.log("Data from python script...");
     dataToSend = data.toString();
