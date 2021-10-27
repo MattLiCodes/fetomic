@@ -4,21 +4,23 @@
     <meta charset="UTF-8" />
     <title>fetoMic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
   </head>
   <body>
     <h1 id="title">fetoMic</h1>
     <p>A Vertically Integrated Project from Georgia Tech</p>
     <div id="fhr">
       <h3 id="fhr-label">Fetal Heart Rate</h3>
-      <h3 id="fhr-value">-</h3>
+      <h3 id="fhr-value">120</h3>
+      <div>
+        <canvas></canvas>
+      </div>
     </div>
     <div id="controls">
       <button id="recordButton">Record</button>
@@ -30,8 +32,22 @@
       <p><strong>Recordings:</strong></p>
       <ol id="recordingsList"></ol>
     </div>
+    <canvas></canvas>
     <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
-    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
-    <script src="js/script.js"></script>
   </body>
+  <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+  <script src="./js/script.js"></script>
+  <link
+    rel="stylesheet"
+    href="./css/style.css"
+    type="text/css"
+    media="screen"
+  />
+  <style>
+    canvas {
+      width: 800px;
+      height: 130px;
+      margin: 2rem auto;
+    }
+  </style>
 </html>
