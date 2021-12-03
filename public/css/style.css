@@ -36,9 +36,15 @@ h2 {
 }
 
 #fhr {
-  margin-top: 10%;
+  margin-top: 10px;
   align-items: center;
   text-align: center;
+}
+
+#hr {
+  width: 90%;
+  height: 250px;
+  border: black solid;
 }
 
 red {

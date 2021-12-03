@@ -17,22 +17,26 @@
     <p>A Vertically Integrated Project from Georgia Tech</p>
     <div id="fhr">
       <h3 id="fhr-label">Fetal Heart Rate</h3>
-      <h3 id="fhr-value">120</h3>
+      <h3 id="fhr-value">143</h3>
       <div>
-        <canvas></canvas>
+        <canvas id="hr"></canvas>
       </div>
     </div>
     <div id="controls">
       <button id="recordButton">Record</button>
       <button id="pauseButton" disabled>Pause</button>
       <button id="stopButton" disabled>Stop</button>
+      <form method="post" action="/readPython" type="submit">
+        <fieldset>
+          <button type="submit">Process</button>
+        </fieldset>
+      </form>
     </div>
     <div id="recordings">
       <div id="formats">Format: start recording to see sample rate</div>
       <p><strong>Recordings:</strong></p>
       <ol id="recordingsList"></ol>
     </div>
-    <canvas></canvas>
     <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
   </body>
   <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
